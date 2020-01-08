@@ -1,11 +1,227 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
-        <title>Lesson05</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+  <head>
+    <title>자기소개 웹 사이트</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 부트스트랩 CSS 추가하기 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- 커스텀 CSS 추가하기 -->
+    <link rel="stylesheet" href="./css/custom.css">
+  </head>
+  <body>
+    <div id="home"/>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">이준영</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">메인</a>
+            </li>
+            <li class="nav-item">
+              <a href="#career" class="nav-link">경력</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">포트폴리오</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">연락처</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container mt-5">
+      <div class="text-center">
+        <img src="./img/profile.jpg" class="img-fluid mb-3 rounded-circle mt-5">
+        <h2>이준영</h2>
+        <img src="./img/box.svg" class="img-fluid mr-1">프로그래머
+        <img src="./img/anchor.svg" class="img-fluid mr-1">교육자
+        <img id="career" src="./img/book.svg" class="img-fluid mr-1">작가
+      </div>
+    </section>
+    <section class="bg-white text-dark mt-5 mb-3 pt-5 pb-4">
+      <div class="text-center">
+        <div class="container text-left mb-5" style="max-width: 480px;">
+          <h2>수상 경력</h2>
+          <ul>
+            <li>2017 대한민국 인재상 100인 선정(2017.11)</li>
+            <li>2017 연합 소프트웨어 경진대회 최우수상(2017.11)</li>
+            <li>2017 전국 창의문제 해결능력 경진대회 대상(2017.09)</li>
+            <li>2017 MIDAS Challenge 최우수상(2017.05)</li>
+          </ul>
+        </div>
+        <div class="container text-left" style="max-width: 480px;">
+          <h2>활동 경력</h2>
+          <ul>
+            <li>위키북스 프로그래밍 교재 집필진(2017.02 ~ 현재)</li>
+            <li>SW교육 선도학교 지원연구단 연구진(2017.06 ~ 현재)</li>
+            <li>IT 교육 유튜브 채널 & 블로그 운영(2015.09 ~ 현재)</li>
+            <li id="portfolio">LG 서브원 외주 소프트웨어 개발자(2016.12 ~ 2017.02)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="mb-3 pt-4 pb-5">
+      <div class="text-center">
+        <h2>포트폴리오</h2>
+      </div>
+      <div class="container mt-3" style="max-width: 920px;">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="./img/portfolio1.png">
+            <div class="card-body">
+              <h4 class="card-title">Dynamic Beat</h4>
+              <p class="card-text" style="text-align: justify">Dynamic Beat는 자바(Java)로 개발한 2D 리듬게임입니다. 2D 게임을 개발했을 뿐 아니라  게임을 만드는 전 과정을 유튜브 강의로 촬영하여 무료로 배포하는 과정을 통해 많은 것을 배운 프로젝트입니다.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./img/portfolio2.png">
+            <div class="card-body">
+              <h4 class="card-title">다락리타임 어플리케이션</h4>
+              <p class="card-text" style="text-align: justify">한국교원대학교 학생들을 위해 개발한 무료 수강신청 도우미 안드로이드 앱입니다. 회원가입, 로그인, 강의 신청, 강의 시간표 보기, 강의 분석, 경쟁률 분석 등의 기능을 포함한 학생 자율 어플리케이션입니다.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="./img/portfolio3.png">
+            <div class="card-body">
+              <h4 class="card-title">MIDAS-Cook</h4>
+              <p class="card-text" style="text-align: justify">웹 솔루션 공모전 수상작입니다. 학교 내 식단 알림, 이메일 전송, 공지사항, 자유게시판, 통계 다이어그램 등의 기능을 포함한 신개념 학생 식단 관리 웹 솔루션입니다.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./img/portfolio4.png">
+            <div class="card-body">
+              <h4 class="card-title">다락리타임 웹 사이트</h4>
+              <p class="card-text" style="text-align: justify">기존에 존재하던 다락리타임 어플리케이션을 반응형 웹 기술을 이용해 개편한 웹 사이트입니다. 마찬가지로 회원가입, 로그인, 강의 신청, 강의 시간표 보기 등의 기능을 제공합니다. 태블릿, 모바일, 노트북 등의 멀티 플랫폼을 지원합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="mt-5">연락처</h2>
+            <div class="d-flex flex-row">
+              <div class="p-3 align-self-start">
+                <img src="./img/check.svg">
+              </div>
+              <div class="p-3 align-self-end" style="text-align: justify">
+                JSP 기반 웹 사이트 개발 문의
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="p-3 align-self-start">
+                <img src="./img/check.svg">
+              </div>
+              <div class="p-3 align-self-end" style="text-align: justify">
+                프로그래밍/정보보안 강의 문의
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="p-3 align-self-start">
+                <img src="./img/check.svg">
+              </div>
+              <div class="p-3 align-self-end" style="text-align: justify">
+                안드로이드 어플리케이션 개발 문의
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="p-3 align-self-start">
+                <img src="./img/check.svg">
+              </div>
+              <div class="p-3 align-self-end" style="text-align: justify">
+                IT 교육 유튜브 채널 & 블로그 마케팅 관련 문의
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="p-3 align-self-start">
+                <img src="./img/check.svg">
+              </div>
+              <div class="p-3 align-self-end" style="text-align: justify">
+                프로그래밍 교재 저술 활동 관련 문의
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="p-3 align-self-start">
+                <img src="./img/check.svg">
+              </div>
+              <div class="p-3 align-self-end" style="text-align: justify">
+                이메일: ndb796@naver.com
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card text-center card-form mt-4 mb-4">
+              <div class="card-body">
+                <h2>간편 문의</h2>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="이름">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control form-control-lg" placeholder="이메일">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="연락처">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" style="min-height: 100px;" placeholder="내용을 입력하세요."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-success">전송하기</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center bg-dark text-white">
+        <div class="footer-above">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3 style="color: white;">위치</h3>
+                        <p>Zelkova Studios
+                            <br>서울특별시 양천구 오목로</p>
+                    </div>
+                    <div class="footer-col col-md-4 mb-2">
+                        <h3 style="color: white;">소셜 미디어</h3>
+                            <a href="https://www.facebook.com/dongbin.na" class="btn btn-light m-2">페이스북</a>
+                            <a href="https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw" class="btn btn-light m-2">유튜브</a>
+                            <a href="https://blog.naver.com/ndb796" class="btn btn-light m-2">네이버 블로그</a>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3 style="color: white;">이준영</h3>
+                        <p>소통하는 개발자가 되겠습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; 이준영 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 제이쿼리 자바스크립트 추가하기 -->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <!-- Popper 자바스크립트 추가하기 -->
+    <script src="./js/popper.min.js"></script>
+    <!-- 부트스트랩 자바스크립트 추가하기 -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
 </html>
